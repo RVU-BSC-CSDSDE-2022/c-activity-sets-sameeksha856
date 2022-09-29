@@ -1,7 +1,6 @@
-#include <studio.in>
-int main(void)
-{
-  printf("Sameeksha M.V");
- return 0;
-  
+#include <stdio.h>
+
+int main(void) {
+  printf("Sameeksha M V");
+  return 0;
 }
