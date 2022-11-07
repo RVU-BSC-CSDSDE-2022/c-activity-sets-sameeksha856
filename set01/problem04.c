@@ -1,18 +1,27 @@
 #include <stdio.h>
-sum_calc(int x,int y,int *sum);
+int main(){
+   int a,b,sum;
+   a=input();
+   b=input();
+   sum=add(a,b);
+   output(a,b,sum); 
+ }
 
-int main(void)
- {
-  int x,y,sum;
-  printf("Enter the first number\n");
-  scanf("%d",&x);
-  printf("Enter the second number\n");
-  scanf("%d",&y);
-  sum_calc(x,y, &sum);
- printf("sum is %d",sum);
- return 0;
+int input()
+{
+  int a;
+  scanf("%d",&a);
+  return a;
+  }
+
+ int add(int a,int b,int *sum)
+{
+   int sum=a+b;
+   return sum;
  }
-sum_calc(int x,int y,int *sum)
- {
- *sum = x+y;
- }
+
+void output(int a,int b,int sum)
+{
+  printf("The sum of %d and %d is %d",a,b,sum);
+  
+}
