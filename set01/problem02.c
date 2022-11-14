@@ -7,3 +7,4 @@ int main(void){
  printf("%d %d %d",sum,a,b);
   return 0;
  } 
+
